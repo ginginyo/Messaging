@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderCustomComponent } from './header-custom/header-custom.component';
 import { SidebarCustomComponent } from './sidebar-custom/sidebar-custom.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -11,7 +12,8 @@ import { SidebarCustomComponent } from './sidebar-custom/sidebar-custom.componen
     SidebarCustomComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+	AppRoutingModule
   ],
   exports: [
     HeaderCustomComponent,
