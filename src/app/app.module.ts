@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TemplateModule } from './template/template.module';
+import { HttpClientModule } from '@angular/common/http';
+import { MessagingModule } from './messaging/messaging.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { TemplateModule } from './template/template.module';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-	TemplateModule
+	HttpClientModule,
+	TemplateModule,
+	MessagingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

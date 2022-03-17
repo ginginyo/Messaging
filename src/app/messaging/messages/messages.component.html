@@ -1,1 +1,9 @@
-<p>messages works!</p>
+<div *ngFor="let message of messages">
+	<div class="card my-2 w-75">
+		<div class="card-body">
+			<h5 class="card-title"> {{ message.title }} </h5>
+			<p class="card-text"> {{ message.content }} </p>
+			<button (click)=delete(message) class="btn btn-danger">Delete</button>
+		</div>
+	</div>
+</div>
